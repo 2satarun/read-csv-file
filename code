@@ -2,22 +2,24 @@ import pandas as pd
 import csv
 new_dogs = pd.read_csv("Ryzen_5000_4000.csv",sep="deliminator")                     #read the csv file and save the same folder where ur python file save
 data=new_dogs["Ryzen"].tolist()                                                     #read the only one column Ryzen and tolist use for list
-print()
-print("Ryzen_5000_4000 :",data)                                                     #simple print the csv in the form of list
+                                                    #simple print the csv in the form of list
 
 n2=pd.read_csv("ryzen 3000.csv",sep="  ")                                           #also u can seperate by space as your choise whatever you use
 d2=n2["KWs"].tolist()
-print()
-print("Ryzen 3000 :",d2)
+
 
 n3 = pd.read_csv("athlon_AMD.csv",sep="  ")
 d3=n3["KWs"].tolist()
-print()
-print("athlon_AMD.csv :",d3)
+)
 
 
 n4 = pd.read_csv("negative Ryzen KWs.csv",sep="  ")
 d4=n4["KWs"].tolist()
-print()
-print("athlon_AMD.csv :",d4)
 
+a={                                                                              #create a dictionary and assign value
+    "Ryzen_5000_4000 :": data,
+    "Ryzen 3000 :":d2,
+    "athlon_AMD.csv :":d3,
+    "athlon_AMD.csv :":d4
+}
+print(a)                                                                       #print dictionary
