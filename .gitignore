@@ -5,7 +5,7 @@ data=new_dogs["Ryzen"].tolist()                                                 
 print()
 print("Ryzen_5000_4000 :",data)                                                     #simple print the csv in the form of list
 
-n2=pd.read_csv("ryzen 3000.csv",sep="  ")
+n2=pd.read_csv("ryzen 3000.csv",sep="  ")                                           #also u can seperate by space as your choise whatever you use
 d2=n2["KWs"].tolist()
 print()
 print("Ryzen 3000 :",d2)
